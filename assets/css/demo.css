@@ -2,6 +2,7 @@
 * demo.css
 * File include item demo only specific css only
 ******************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 .menu .app-brand.demo {
   height: 64px;
@@ -104,3 +105,182 @@
   text-align: center;
   margin-top: 1rem;
 }
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+.location-png {
+  color: green;
+    border: 0px;
+    background: #00800026;
+    font-size: 26px;
+}
+.bus-png {
+  color: red;
+  border: 0px;
+  background: #ff00001c;
+  font-size: 26px;
+}
+
+.car-png {
+  color: green;
+  border: 0px;
+  background: #00800026;
+  font-size: 26px;
+}
+
+.train-png {
+    color: #9c27b0;
+    border: 0px;
+    background: #9c27b01c;
+    font-size: 26px;
+}
+
+/* Digital card */
+
+
+.clock-container {
+  width: 405px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 50px;
+  background-color: #2196f3;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 15px 40px -10px rgb(0 0 0 / 83%);
+  color: white;
+}
+
+.clock-container span {
+  text-transform: uppercase;
+  font-size: 10px;
+  text-align: right;
+  display: block;
+}
+
+.clock-container p {
+  font-size: 60px;
+  color: var(--light);
+  font-weight: 100;
+}
+
+.clock-container p:first-letter {
+  letter-spacing: 5px;
+}
+
+.container {
+  width: 400px;
+    height: 200px;
+    display: block;
+    background-color: rgb(255 255 255);
+    position: relative;
+    padding: 2px;
+}
+
+.container .top {
+  width: 215px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.container .top p {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 900;
+  color: var(--purple-dark);
+  letter-spacing: .5px;
+  cursor: pointer;
+}
+
+.container .bottom {
+  height: 7px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: #aaa4b2;
+}
+
+.container .bottom .progress-bar {
+  width: 240px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 9;
+  background-color: #2196f3;
+  transition: var(--transition);
+}
+
+.colon {
+  --size: 3px;
+  width: var(--size);
+  height: 15px;
+  position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.colon::before {
+  content: '';
+  width: 100%;
+  height: var(--size);
+  background-color: #9892a3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.colon::after {
+  content: '';
+  width: 100%;
+  height: var(--size);
+  background-color: #9892a3;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.toast {
+  width: 405px;
+  color: var(--light);
+  padding: 15px 24px;
+  background-color: var(--purple-dark);
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  transition: var(--transition);
+  z-index: 99;
+}
+
+.toast p {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.toast p:first-letter {
+  text-transform: uppercase;
+}
+
+.toast.show {
+  bottom: 50px;
+}
+
+.toast span {
+  align-self: center;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* /Digital card */
+
