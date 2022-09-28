@@ -17,6 +17,10 @@
 .app-brand-text.demo {
   font-size: 1.75rem;
   letter-spacing: -0.5px;
+  /* font-size: 1.4rem; */
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+  color: #3885e9;
 }
 
 /* ! For .layout-navbar-fixed added fix padding top tpo .layout-page */
@@ -284,3 +288,10 @@
 }
 /* /Digital card */
 
+.bg-menu-theme .menu-inner>.menu-item.active>.menu-link {
+  color: #2b7de7;
+  background-color: rgb(45 126 231 / 16%) !important;
+}
+.bg-menu-theme .menu-inner>.menu-item.active:before {
+  background: #2b7de7;
+}
