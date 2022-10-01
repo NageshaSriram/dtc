@@ -87,7 +87,7 @@
 
           <ul class="menu-inner py-1">
             <!-- Dashboard -->
-            <li class="menu-item active">
+            <li class="menu-item">
               <a href="dashboard.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
@@ -106,6 +106,7 @@
                 <div data-i18n="Analytics">Request Card</div>
               </a>
             </li>
+            
 
             <li class="menu-header small text-uppercase">
               <span class="menu-header-text">Account</span>
@@ -170,7 +171,7 @@
 
             <!-- Forms & Tables -->
             <li class="menu-header small text-uppercase"><span class="menu-header-text">Travel</span></li>
-            <li class="menu-item">
+            <li class="menu-item active">
               <a href="travel-history.html" class="menu-link">
                 <i class="menu-icon tf-icons bx bx-sitemap"></i>
                 <div data-i18n="Basic">Travel History</div>
@@ -303,151 +304,42 @@
                 <div class="col-lg-12 mb-4 order-0">
                   <div class="card">
                     <div class="d-flex align-items-end row">
-                      <div class="col-sm-7">
+                      <div class="col-sm-4">
                         <div class="card-body">
-                          <h5 class="card-title text-primary">Hello <span id="userName">Shilpa</span>, welcome back! 🎉</h5>
-                          <p class="mb-4">
-                            Traveler is the one solution for all your daily travelling plans.
-                          </p>
-
-                          <a href="account.html" class="btn btn-sm btn-outline-primary">Edit Profile</a>
+                          <select id="currency" class="select2 form-select">
+                            <option value="">Select From</option>
+                            <option value="Marathalli">Marathalli</option>
+                            <option value="Vijayanagar">Vijayanagar</option>
+                            <option value="Tin Factory">Tin Factory</option>
+                            <option value="Indira Nagar">Indira Nagar</option>
+                          </select>
                         </div>
                       </div>
-                      <div class="col-sm-5 text-center text-sm-left">
-                        <div class="card-body pb-0 px-0 px-md-4">
-                          <img
-                            src="../assets/img/illustrations/man-with-laptop-light.png"
-                            height="140"
-                            alt="View Badge User"
-                            data-app-dark-img="illustrations/man-with-laptop-dark.png"
-                            data-app-light-img="illustrations/man-with-laptop-light.png"
-                          />
+                      <div class="col-sm-4">
+                        <div class="card-body">
+                          <select id="currency" class="select2 form-select">
+                            <option value="">Select To</option>
+                            <option value="Indira Nagar">Indira Nagar</option>
+                            <option value="Tin Factory">Tin Factory</option>
+                            <option value="Vijayanagar">Vijayanagar</option>
+                            <option value="Marathalli">Marathalli</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-sm-4">
+                        <div class="card-body">
+                          <button type="#" class="btn btn-primary me-2 background-logo">Search History</button>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- Transactions -->
-                <div class="col-md-6 col-lg-4 order-2 mb-4">
+               
+                <!-- Available Vehicles -->
+                <div class="col-lg-12 mb-4 order-1">
                   <div class="card h-100">
                     <div class="card-header d-flex align-items-center justify-content-between">
-                      <h5 class="card-title m-0 me-2">Transactions</h5>
-                      <div class="d-flex justify-content-center">
-                        <a href="transactions.html" class="btn btn-sm btn-outline-info">Load More</a>
-                      </div>
-                    </div>
-                    <div class="card-body">
-                      <ul class="p-0 m-0">
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <img src="../assets/img/icons/unicons/wallet.png" alt="User" class="rounded" />
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <small class="text-muted d-block mb-1">Wed Jan 25 2017 16:00
-                              </small>
-                              <h6 class="mb-0">Credited</h6>
-                            </div>
-                            <div class="user-progress d-flex align-items-center gap-1">
-                              <span class="text-muted"><i class="bx bx-rupee"></i></span>
-                              <h6 class="mb-0">500</h6>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <img src="../assets/img/icons/unicons/wallet.png" alt="User" class="rounded" />
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <small class="text-muted d-block mb-1">Wed Jan 25 2017 16:00
-                              </small>
-                              <h6 class="mb-0">Credited</h6>
-                            </div>
-                            <div class="user-progress d-flex align-items-center gap-1">
-                              <span class="text-muted"><i class="bx bx-rupee"></i></span>
-                              <h6 class="mb-0">2000</h6>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <img src="../assets/img/icons/unicons/wallet.png" alt="User" class="rounded" />
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <small class="text-muted d-block mb-1">Wed Jan 25 2017 16:00
-                              </small>
-                              <h6 class="mb-0">Credited</h6>
-                            </div>
-                            <div class="user-progress d-flex align-items-center gap-1">
-                              <span class="text-muted"><i class="bx bx-rupee"></i></span>
-                              <h6 class="mb-0">2000</h6>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <img src="../assets/img/icons/unicons/wallet.png" alt="User" class="rounded" />
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <small class="text-muted d-block mb-1">Wed Jan 25 2017 16:00
-                              </small>
-                              <h6 class="mb-0">Credited</h6>
-                            </div>
-                            <div class="user-progress d-flex align-items-center gap-1">
-                              <span class="text-muted"><i class="bx bx-rupee"></i></span>
-                              <h6 class="mb-0">2000</h6>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <img src="../assets/img/icons/unicons/wallet.png" alt="User" class="rounded" />
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <small class="text-muted d-block mb-1">Wed Jan 25 2017 16:00
-                              </small>
-                              <h6 class="mb-0">Credited</h6>
-                            </div>
-                            <div class="user-progress d-flex align-items-center gap-1">
-                              <span class="text-muted"><i class="bx bx-rupee"></i></span>
-                              <h6 class="mb-0">2000</h6>
-                            </div>
-                          </div>
-                        </li>
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <img src="../assets/img/icons/unicons/wallet.png" alt="User" class="rounded" />
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <small class="text-muted d-block mb-1">Wed Jan 25 2017 16:00
-                              </small>
-                              <h6 class="mb-0">Credited</h6>
-                            </div>
-                            <div class="user-progress d-flex align-items-center gap-1">
-                              <span class="text-muted"><i class="bx bx-rupee"></i></span>
-                              <h6 class="mb-0">2000</h6>
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <!--/ Transactions -->
-                <!-- Travel History -->
-                <div class="col-md-6 col-lg-4 order-2 mb-4">
-                  <div class="card h-100">
-                    <div class="card-header d-flex align-items-center justify-content-between">
-                      <h5 class="card-title m-0 me-2">Travel History</h5>
-                      
-                      <div class="d-flex justify-content-center">
-                        <a href="travel-history.html" class="btn btn-sm btn-outline-info">Load More</a>
-                      </div>
+                      <h5 class="card-title m-0 me-2">Availabe Vahicles</h5>
                     </div>
                     <div class="card-body">
                       <ul class="p-0 m-0">
@@ -456,9 +348,14 @@
                             <i class='bx bxs-bus bx-border bus-png'></i>
                           </div>
                           <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">Marathalli</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">KR Puram</h6>
+                            </div>
                             <div class="me-2">
-                              <small class="text-muted d-block mb-1">Wed Jan 25 2017 16:00</small>
-                              <h6 class="mb-0">Marathalli <i class='bx bx-chevron-right' ></i> KR Puram</h6>
+                              <h6 class="mb-0">Wed Jan 25 2017 16:00</h6>
                             </div>
                             <div class="user-progress d-flex align-items-center gap-1">
                               <span class="text-muted"><i class='bx bx-rupee'></i></span>
@@ -471,24 +368,14 @@
                             <i class='bx bxs-car bx-border car-png'></i>
                           </div>
                           <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                            <div class="me-2">
-                              <small class="text-muted d-block mb-1">Wed Jan 25 2017 16:00</small>
-                              <h6 class="mb-0">Marathalli <i class='bx bx-chevron-right' ></i> KR Puram</h6>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">Marathalli</h6>
                             </div>
                             <div class="user-progress d-flex align-items-center gap-1">
-                              <span class="text-muted"><i class='bx bx-rupee'></i></span>
-                              <h6 class="mb-0">100</h6>
+                              <h6 class="mb-0">KR Puram</h6>
                             </div>
-                          </div>
-                        </li>
-                        <li class="d-flex mb-4 pb-1">
-                          <div class="avatar flex-shrink-0 me-3">
-                            <i class='bx bxs-bus bx-border bus-png'></i>
-                          </div>
-                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                             <div class="me-2">
-                              <small class="text-muted d-block mb-1">Wed Jan 25 2017 16:00</small>
-                              <h6 class="mb-0">Marathalli <i class='bx bx-chevron-right' ></i> KR Puram</h6>
+                              <h6 class="mb-0">Wed Jan 25 2017 16:00</h6>
                             </div>
                             <div class="user-progress d-flex align-items-center gap-1">
                               <span class="text-muted"><i class='bx bx-rupee'></i></span>
@@ -501,9 +388,14 @@
                             <i class='bx bxs-bus bx-border bus-png'></i>
                           </div>
                           <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">Marathalli</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">KR Puram</h6>
+                            </div>
                             <div class="me-2">
-                              <small class="text-muted d-block mb-1">Wed Jan 25 2017 16:00</small>
-                              <h6 class="mb-0">Marathalli <i class='bx bx-chevron-right' ></i> KR Puram</h6>
+                              <h6 class="mb-0">Wed Jan 25 2017 16:00</h6>
                             </div>
                             <div class="user-progress d-flex align-items-center gap-1">
                               <span class="text-muted"><i class='bx bx-rupee'></i></span>
@@ -516,29 +408,178 @@
                             <i class='bx bxs-train bx-border train-png'></i>
                           </div>
                           <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">Marathalli</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">KR Puram</h6>
+                            </div>
                             <div class="me-2">
-                              <small class="text-muted d-block mb-1">Wed Jan 25 2017 16:00</small>
-                              <h6 class="mb-0">Mejestic <i class='bx bx-chevron-right' ></i> Indira Nagar</h6>
+                              <h6 class="mb-0">Wed Jan 25 2017 16:00</h6>
                             </div>
                             <div class="user-progress d-flex align-items-center gap-1">
                               <span class="text-muted"><i class='bx bx-rupee'></i></span>
-                              <h6 class="mb-0">30</h6>
+                              <h6 class="mb-0">82</h6>
                             </div>
                           </div>
                         </li>
-                        
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <i class='bx bxs-bus bx-border bus-png'></i>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">Marathalli</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">KR Puram</h6>
+                            </div>
+                            <div class="me-2">
+                              <h6 class="mb-0">Wed Jan 25 2017 16:00</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <span class="text-muted"><i class='bx bx-rupee'></i></span>
+                              <h6 class="mb-0">82</h6>
+                            </div>
+                          </div>
+                        </li>
                         <li class="d-flex mb-4 pb-1">
                           <div class="avatar flex-shrink-0 me-3">
                             <i class='bx bxs-car bx-border car-png'></i>
                           </div>
                           <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">Marathalli</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">KR Puram</h6>
+                            </div>
                             <div class="me-2">
-                              <small class="text-muted d-block mb-1">Wed Jan 25 2017 16:00</small>
-                              <h6 class="mb-0">Mejestic <i class='bx bx-chevron-right' ></i> Indira Nagar</h6>
+                              <h6 class="mb-0">Wed Jan 25 2017 16:00</h6>
                             </div>
                             <div class="user-progress d-flex align-items-center gap-1">
                               <span class="text-muted"><i class='bx bx-rupee'></i></span>
-                              <h6 class="mb-0">30</h6>
+                              <h6 class="mb-0">82</h6>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <i class='bx bxs-bus bx-border bus-png'></i>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">Marathalli</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">KR Puram</h6>
+                            </div>
+                            <div class="me-2">
+                              <h6 class="mb-0">Wed Jan 25 2017 16:00</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <span class="text-muted"><i class='bx bx-rupee'></i></span>
+                              <h6 class="mb-0">82</h6>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <i class='bx bxs-bus bx-border bus-png'></i>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">Marathalli</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">KR Puram</h6>
+                            </div>
+                            <div class="me-2">
+                              <h6 class="mb-0">Wed Jan 25 2017 16:00</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <span class="text-muted"><i class='bx bx-rupee'></i></span>
+                              <h6 class="mb-0">82</h6>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <i class='bx bxs-train bx-border train-png'></i>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">Marathalli</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">KR Puram</h6>
+                            </div>
+                            <div class="me-2">
+                              <h6 class="mb-0">Wed Jan 25 2017 16:00</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <span class="text-muted"><i class='bx bx-rupee'></i></span>
+                              <h6 class="mb-0">82</h6>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <i class='bx bxs-bus bx-border bus-png'></i>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">Marathalli</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">KR Puram</h6>
+                            </div>
+                            <div class="me-2">
+                              <h6 class="mb-0">Wed Jan 25 2017 16:00</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <span class="text-muted"><i class='bx bx-rupee'></i></span>
+                              <h6 class="mb-0">82</h6>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <i class='bx bxs-bus bx-border bus-png'></i>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">Marathalli</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">KR Puram</h6>
+                            </div>
+                            <div class="me-2">
+                              <h6 class="mb-0">Wed Jan 25 2017 16:00</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <span class="text-muted"><i class='bx bx-rupee'></i></span>
+                              <h6 class="mb-0">82</h6>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="d-flex mb-4 pb-1">
+                          <div class="avatar flex-shrink-0 me-3">
+                            <i class='bx bxs-bus bx-border bus-png'></i>
+                          </div>
+                          <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">Marathalli</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <h6 class="mb-0">KR Puram</h6>
+                            </div>
+                            <div class="me-2">
+                              <h6 class="mb-0">Wed Jan 25 2017 16:00</h6>
+                            </div>
+                            <div class="user-progress d-flex align-items-center gap-1">
+                              <span class="text-muted"><i class='bx bx-rupee'></i></span>
+                              <h6 class="mb-0">82</h6>
                             </div>
                           </div>
                         </li>
@@ -546,79 +587,8 @@
                     </div>
                   </div>
                 </div>
-                <!--/ Travel History -->
-                
-                <div class="col-12 col-md-8 col-lg-4 order-3 order-md-2">
-                  <div class="row">
-                    <div class="col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <i class='bx bxs-location-plus bx-border location-png'></i>
-                            </div>
-                          </div>
-                          <span class="fw-semibold d-block mb-1">Last Vehicle</span>
-                          <h3 class="card-title text-nowrap mb-2">KA03 JU 1234</h3>
-                          <small class="text-muted d-block mb-1">Wed Jan 25 2017 16:00</small>
-                          <div class="d-flex justify-content-center margin-top-50">
-                            <a href="booking.html" class="btn btn-sm btn-outline-success">Book Ride</a>
-                          </div>  
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-6 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="card-title d-flex align-items-start justify-content-between">
-                            <div class="avatar flex-shrink-0">
-                              <img src="../assets/img/icons/unicons/cc-primary.png" alt="Credit Card" class="rounded" />
-                            </div>
-                          </div>
-                          <span class="fw-semibold d-block mb-1">Wallet Balance</span>
-                          <h3 class="card-title mb-2">5,000</h3>
-                          <small class="text-muted d-block mb-1">Wed Jan 25 2017 16:00</small>
-                          <div class="d-flex justify-content-center margin-top-50">
-                            <a href="javascript:;" class="btn btn-sm btn-outline-primary">Recharge</a>
-                          </div>      
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 mb-4">
-                      <div class="card">
-                        <div class="card-body">
-                          <div class="d-flex justify-content-between flex-sm-row flex-column gap-3">
-                            <div class="d-flex flex-sm-column flex-row align-items-start justify-content-between">
-                              <div class="container">
-                                <div class="clock-container">
-                                    <div class="hours">
-                                        <span>Hours</span>
-                                        <p id='hour'> 00 </p>
-                                    </div>
-                                    <div class="colon"></div>
-                                    <div class="minutes">
-                                        <span>Minutes</span>
-                                        <p id='minute'> 00 </p>
-                                    </div>
-                                    <div class="colon"></div>
-                                    <div class="seconds">
-                                        <span>Seconds</span>
-                                        <p id='second'> 00 </p>
-                                    </div>
-                                </div>
-                                <div class="bottom">
-                                    <div class="progress-bar" id="progress"></div>
-                                </div>
-                            </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-            </div>
+                <!--/ Available Vehicles -->
+               
           </div>
           </div>
             <!-- / Content -->
@@ -650,6 +620,42 @@
                   >
                 </div>
               </div>
+
+              <!-- Modal 1-->
+              <div
+              class="modal fade"
+              id="modalToggle"
+              aria-labelledby="modalToggleLabel"
+              tabindex="-1"
+              style="display: none"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="modalToggleLabel">Booking Confirmation</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">It will book a vehicle for you, Please click Confirm Booking.</div>
+                  <div class="modal-footer">
+                    <button
+                      class="btn btn-primary background-logo"
+                      data-bs-target="#modalToggle2"
+                      data-bs-toggle="modal"
+                      data-bs-dismiss="modal"
+                    >
+                      Confirm Booking
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             </footer>
             <!-- / Footer -->
 
@@ -682,7 +688,7 @@
     <script src="../assets/js/main.js"></script>
 
     <!-- Page JS -->
-    <script src="../assets/js/dashboards-analytics.js"></script>
+    <!-- <script src="../assets/js/dashboards-analytics.js"></script> -->
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>
